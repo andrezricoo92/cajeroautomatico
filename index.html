@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cajero Automático</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Cajero Automático</h1>
+
+  <div id="account-selection">
+    <h2>Selecciona una cuenta:</h2>
+    <button class="account-btn" data-account="Persona 1">Persona 1</button>
+    <button class="account-btn" data-account="Persona 2">Persona 2</button>
+    <button class="account-btn" data-account="Persona 3">Persona 3</button>
+  </div>
+
+  <div id="password-input" class="hidden">
+    <h2>Ingresa el password:</h2>
+    <input type="password" id="password">
+    <button id="password-submit">Enviar</button>
+    <p id="password-error" class="hidden">Password incorrecto. Inténtalo nuevamente.</p>
+  </div>
+
+  <div id="transaction-options" class="hidden">
+    <h2>Opciones:</h2>
+    <button id="check-balance">Consultar saldo</button>
+    <button id="deposit">Ingresar monto</button>
+    <button id="withdraw">Retirar monto</button>
+  </div>
+
+  <div id="transaction-input" class="hidden">
+    <h2 id="transaction-title"></h2>
+    <input type="number" id="transaction-amount" min="10" max="990">
+    <button id="transaction-submit">Enviar</button>
+    <p id="transaction-error" class="hidden"></p>
+    <p id="transaction-result" class="hidden"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
